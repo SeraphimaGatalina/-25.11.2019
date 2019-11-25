@@ -3,16 +3,15 @@
 
 using namespace std;
 
-template<typename T>
-T erSieving(T &n)
+int erSieving(int &n)
 {
-	T d = 2;
-	vector <T> f(n + 1, true);
+	int d = 2;
+	vector <int> f(n + 1, true);
 	f[0] = false;
 	f[1] = false;
 	while (d * d <= n)
 	{
-		for (T i = d * d; i <= n; i += d)
+		for (int i = d * d; i <= n; i += d)
 		{
 			f[i] = false;
 		}
