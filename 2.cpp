@@ -6,10 +6,6 @@ using namespace std;
 
 int main()
 {
-	ios::sync_with_stdio(false);
-	cin.tie(nullptr);
-	cout.tie(nullptr);
-	
 	long long left, right;
 	cin >> left;
 	vector <long long> arr;
@@ -56,6 +52,4 @@ int main()
 		}
 	}
 }
-/*
- *программа эффективная, потому что не является перебором и выводит только нужные числа
- */
+//выводит только нужные числа
